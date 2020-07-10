@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bf687078c53cc2e0a55dad6fc249e1f9",
+    "revision": "df3fabb0f968833de58250722a2b0336",
     "url": "/playlist-wizard-client/index.html"
   },
   {
-    "revision": "ad06780176bec2a8f99e",
+    "revision": "dfad8e3c3afe53ed19ee",
     "url": "/playlist-wizard-client/static/css/main.6942973f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/playlist-wizard-client/static/js/2.d474daa3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ad06780176bec2a8f99e",
-    "url": "/playlist-wizard-client/static/js/main.122cb73d.chunk.js"
+    "revision": "dfad8e3c3afe53ed19ee",
+    "url": "/playlist-wizard-client/static/js/main.60d44cbe.chunk.js"
   },
   {
     "revision": "a32f0af81d2619fb691f",

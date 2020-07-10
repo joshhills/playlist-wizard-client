@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/playlist-wizard-client/precache-manifest.e45a91cdcebcbcbca2164f7bdeb2245b.js"
+  "/playlist-wizard-client/precache-manifest.e076da1d3d93da7b18df4c48d1643015.js"
 );
 
 self.addEventListener('message', (event) => {
