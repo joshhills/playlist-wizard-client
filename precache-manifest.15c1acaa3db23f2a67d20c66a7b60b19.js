@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "df3fabb0f968833de58250722a2b0336",
+    "revision": "09ff9b7e18a87ca37ff234c9f32bcd31",
     "url": "/playlist-wizard-client/index.html"
   },
   {
-    "revision": "dfad8e3c3afe53ed19ee",
+    "revision": "5a2cee6cf2696829b31e",
     "url": "/playlist-wizard-client/static/css/main.6942973f.chunk.css"
   },
   {
-    "revision": "566c217bd6dd0edd3f6b",
-    "url": "/playlist-wizard-client/static/js/2.d474daa3.chunk.js"
+    "revision": "d6dcc5d71ec4635f8a90",
+    "url": "/playlist-wizard-client/static/js/2.646524e5.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/playlist-wizard-client/static/js/2.d474daa3.chunk.js.LICENSE.txt"
+    "url": "/playlist-wizard-client/static/js/2.646524e5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dfad8e3c3afe53ed19ee",
-    "url": "/playlist-wizard-client/static/js/main.60d44cbe.chunk.js"
+    "revision": "5a2cee6cf2696829b31e",
+    "url": "/playlist-wizard-client/static/js/main.0cca5c01.chunk.js"
   },
   {
     "revision": "a32f0af81d2619fb691f",
