@@ -16,36 +16,36 @@ export default function New() {
             {
                 title: 'Total Songs',
                 icon: '',
-                step: <TotalSongs />,
-                inspectorComponent: <ModelViewer model="potions"/>,
+                step: TotalSongs,
+                inspector: <ModelViewer model="potions"/>,
                 skippable: false
             },
             {
                 title: 'Set Mood',
                 icon: '',
-                step: <SetMood />,
-                inspectorComponent: <ModelViewer model="shoes"/>,
+                step: SetMood,
+                inspector: <ModelViewer model="shoes"/>,
                 skippable: false
             },
             {
                 title: 'Add Artists',
                 icon: '',
-                step: <AddArtists />,
-                inspectorComponent: <ModelViewer model="scissors"/>,
+                step: AddArtists,
+                inspector: <ModelViewer model="scissors"/>,
                 skippable: false
             },
             {
                 title: 'Link Spotify',
                 icon: '',
-                step: <LinkSpotify />,
-                inspectorComponent: <ModelViewer model="mirror"/>,
+                step: LinkSpotify,
+                inspector: <ModelViewer model="mirror"/>,
                 skippable: false
             },
             {
                 title: 'Create Mix',
                 icon: '',
-                step: <GenerateNewPlaylist />,
-                inspectorComponent: <ModelViewer model="shazam"/>,
+                step: GenerateNewPlaylist,
+                inspector: <ModelViewer model="shazam"/>,
                 skippable: false
             }
         ]

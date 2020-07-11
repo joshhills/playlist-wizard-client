@@ -6,7 +6,22 @@ export default class Wizard extends React.Component {
     
     state = {
         activeIndex: this.props.configuration.activeIndex,
-        items: this.props.configuration.items
+        items: this.props.configuration.items,
+        formValues: {}
+    }
+
+    handleValueChange = (event) => {
+        const eventName = event.target.name
+        const eventValue = event.target.value
+
+        this.setState(prevState => {
+            return {
+                formValues: {
+                    ...prevState.formValues,
+                    [eventName]: eventValue
+                }
+            }
+        })
     }
 
     handleNext = () => {
@@ -31,7 +46,8 @@ export default class Wizard extends React.Component {
 
     handleReset = () => {
         this.setState({
-            activeIndex: 0
+            activeIndex: 0,
+            formValues: {}
         })
     }
 
@@ -51,6 +67,8 @@ export default class Wizard extends React.Component {
                     handleNext={ this.handleNext }
                     handleBack={ this.handleBack } 
                     handleReset={ this.handleReset }
+                    handleValueChange={ this.handleValueChange }
+                    formValues={ this.state.formValues }
                     />
             </div>
         )

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 
-export default function SetMood() {
+export default function SetMood(props) {
     return (
         <Fragment>
             <p>
@@ -11,6 +11,15 @@ export default function SetMood() {
             <p>
                 Pick a vibe
             </p>
+            <input
+                name="test"
+                min="5"
+                max="100"
+                defaultValue="31"
+                type="number"
+                placeholder="31"
+                value={ props.formValues['test']}
+                onChange={ props.handleValueChange } />
         </Fragment>
     )
 }

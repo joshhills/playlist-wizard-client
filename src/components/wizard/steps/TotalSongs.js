@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 
-export default function TotalSongs() {
+export default function TotalSongs(props) {
     return (
         <Fragment>
             <p>
@@ -11,9 +11,17 @@ export default function TotalSongs() {
             </p>
             <p>
                 Choose the total number of songs you'd like in your
-                playlsit
+                playlist
             </p>
-            <input name="total-songs" min="5" max="100" defaultValue="31" type="number" placeholder="31" />
+            <input
+                name="total-songs"
+                min="5"
+                max="100"
+                defaultValue="31"
+                type="number"
+                placeholder="31"
+                value={ props.formValues['total-songs']}
+                onChange={ props.handleValueChange } />
         </Fragment>
     )
 }
