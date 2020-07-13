@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/playlist-wizard-client/static/css/main.6942973f.chunk.css",
-    "main.js": "/playlist-wizard-client/static/js/main.3027acbf.chunk.js",
-    "main.js.map": "/playlist-wizard-client/static/js/main.3027acbf.chunk.js.map",
+    "main.js": "/playlist-wizard-client/static/js/main.e4c4eeae.chunk.js",
+    "main.js.map": "/playlist-wizard-client/static/js/main.e4c4eeae.chunk.js.map",
     "runtime-main.js": "/playlist-wizard-client/static/js/runtime-main.8d48954e.js",
     "runtime-main.js.map": "/playlist-wizard-client/static/js/runtime-main.8d48954e.js.map",
     "static/js/2.763a2e29.chunk.js": "/playlist-wizard-client/static/js/2.763a2e29.chunk.js",
     "static/js/2.763a2e29.chunk.js.map": "/playlist-wizard-client/static/js/2.763a2e29.chunk.js.map",
     "index.html": "/playlist-wizard-client/index.html",
-    "precache-manifest.59f63d1a4c4beb2e27c05a8c2db6f575.js": "/playlist-wizard-client/precache-manifest.59f63d1a4c4beb2e27c05a8c2db6f575.js",
+    "precache-manifest.bcab49265bcbb7d410f4ad1059a12b1f.js": "/playlist-wizard-client/precache-manifest.bcab49265bcbb7d410f4ad1059a12b1f.js",
     "service-worker.js": "/playlist-wizard-client/service-worker.js",
     "static/css/main.6942973f.chunk.css.map": "/playlist-wizard-client/static/css/main.6942973f.chunk.css.map",
     "static/js/2.763a2e29.chunk.js.LICENSE.txt": "/playlist-wizard-client/static/js/2.763a2e29.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.8d48954e.js",
     "static/js/2.763a2e29.chunk.js",
     "static/css/main.6942973f.chunk.css",
-    "static/js/main.3027acbf.chunk.js"
+    "static/js/main.e4c4eeae.chunk.js"
   ]
 }
