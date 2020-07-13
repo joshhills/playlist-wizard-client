@@ -10,7 +10,7 @@ export default class PillSelect extends React.Component {
         name: this.props.name,
         max: this.props.max,
         handleChange: this.props.handleChange,
-        value: null
+        value: this.props.formValues[this.props.name] || null
     }
 
     handleClick = (value) => {

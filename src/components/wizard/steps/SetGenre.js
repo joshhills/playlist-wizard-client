@@ -14,7 +14,8 @@ export default function SetGenre(props) {
                 name="genres"
                 multi={ true }
                 max={ 2 }
-                handleChange={ props.handleValueChange }>
+                handleChange={ props.handleValueChange }
+                formValues={ props.formValues }>
                 {{
                     options: [
                         {
