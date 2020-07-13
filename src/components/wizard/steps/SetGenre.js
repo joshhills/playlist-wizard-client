@@ -9,10 +9,12 @@ export default function SetGenre(props) {
                     The wizard invites you to join a ceremonial dance.
                 </em>
             </p>
-            <p>
-                Choose up to two genres...
-            </p>
-            <PillSelect name="genre" multi="true" max="2" handleChange={ props.handleValueChange }>
+            <PillSelect
+                title="Choose up to two genres..."
+                name="genres"
+                multi={ true }
+                max={ 2 }
+                handleChange={ props.handleValueChange }>
                 {{
                     options: [
                         {

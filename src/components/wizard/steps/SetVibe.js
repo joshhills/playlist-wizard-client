@@ -12,7 +12,7 @@ export default function SetVibe(props) {
             <p>
                 Create a vibe...
             </p>
-            <PillSelect name="vibe" multi="true" handleChange={ props.handleValueChange }>
+            <PillSelect name="vibes" multi="true" handleChange={ props.handleValueChange }>
                 {{
                     options: [
                         {

@@ -5,14 +5,18 @@ import ActiveStepContainer from './ActiveStepContainer'
 export default class Wizard extends React.Component {
     
     state = {
-        activeIndex: this.props.configuration.activeIndex,
-        items: this.props.configuration.items,
+        activeIndex: this.props.activeIndex,
         formValues: {}
     }
 
     handleValueChange = (event) => {
         const eventName = event.target.name
-        const eventValue = event.target.value
+        let eventValue = event.target.value
+        const eventType = event.target.type
+
+        if (eventType === 'number') {
+            eventValue = +eventValue
+        }
 
         this.setState(prevState => {
             return {
@@ -26,7 +30,7 @@ export default class Wizard extends React.Component {
 
     handleNext = () => {
         this.setState(prevState => {
-            if (prevState.activeIndex !== prevState.items.length - 1) {
+            if (prevState.activeIndex !== this.props.children.length - 1) {
                 return { 
                     activeIndex: prevState.activeIndex + 1
                 } 
@@ -53,12 +57,12 @@ export default class Wizard extends React.Component {
 
     render() {
         const activeIndex = this.state.activeIndex
-        const numItems = this.state.items.length
-        const activeItem = this.state.items[activeIndex]
+        const numItems = this.props.children.length
+        const activeItem = this.props.children[activeIndex]
 
         return(
             <div>
-                <ProgressBar items={ this.state.items }/>
+                <ProgressBar items={ this.props.children }/>
                 <ActiveStepContainer
                     index={ activeIndex }
                     max={ numItems }

@@ -17,7 +17,6 @@ export default function TotalSongs(props) {
                 name="total-songs"
                 min="5"
                 max="100"
-                defaultValue="31"
                 type="number"
                 placeholder="31"
                 value={ props.formValues['total-songs']}

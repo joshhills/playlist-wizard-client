@@ -2,7 +2,8 @@ import React, { Fragment } from 'react'
 import Wizard from '../wizard/Wizard'
 import Header from '../Header'
 import TotalSongs from '../wizard/steps/TotalSongs'
-import SetMood from '../wizard/steps/SetMood'
+import SetGenre from '../wizard/steps/SetGenre'
+import SetVibe from '../wizard/steps/SetVibe'
 import AddArtists from '../wizard/steps/AddArtists'
 import LinkSpotify from '../wizard/steps/LinkSpotify'
 import GenerateNewPlaylist from '../wizard/steps/GenerateNewPlaylist'
@@ -13,10 +14,9 @@ export default function New() {
         <Fragment>
             <Header title="PW - Create New" />
             <main>
-                <Wizard>
-                    {{
-                        activeIndex: 0,
-                        items : [
+                <Wizard activeIndex={ 0 }>
+                    {
+                        [
                             {
                                 title: 'Total Songs',
                                 icon: '',
@@ -34,8 +34,8 @@ export default function New() {
                             {
                                 title: 'Set Vibe',
                                 icon: '',
-                                step: SetMood,
-                                inspector: <ModelViewer model="shoes"/>,
+                                step: SetVibe,
+                                inspector: <ModelViewer model="spices"/>,
                                 skippable: false
                             },
                             {
@@ -60,7 +60,7 @@ export default function New() {
                                 skippable: false
                             }
                         ]
-                    }}
+                    }
                 </Wizard>
             </main>
         </Fragment>
