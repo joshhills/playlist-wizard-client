@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import PillSelect from '../../pill-select/PillSelect'
+import genres from '../../../config/genres.json'
 
 export default function SetGenre(props) {
     return (
@@ -17,20 +18,7 @@ export default function SetGenre(props) {
                 handleChange={ props.handleValueChange }
                 formValues={ props.formValues }>
                 {{
-                    options: [
-                        {
-                            value: 0,
-                            label: 'Rock'
-                        },
-                        {
-                            value: 1,
-                            label: 'Rap'
-                        },
-                        {
-                            value: 2,
-                            label: 'Pop'
-                        }
-                    ]
+                    options: genres.map(g => { return { value: g, label: `${g[0].toUpperCase()}${g.slice(1)}` } })
                 }}
             </PillSelect>
         </Fragment>

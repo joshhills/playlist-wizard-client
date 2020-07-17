@@ -16,6 +16,8 @@ export default class Wizard extends React.Component {
 
         if (eventType === 'number') {
             eventValue = +eventValue
+        } else if (eventType === 'checkbox') {
+            eventValue = event.target.checked
         }
 
         this.setState(prevState => {

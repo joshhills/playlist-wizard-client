@@ -22,36 +22,36 @@ export default function New() {
                                 icon: '',
                                 step: TotalSongs,
                                 inspector: <ModelViewer model="potions"/>,
-                                skippable: false
+                                skippable: true
                             },
                             {
                                 title: 'Set Genre',
                                 icon: '',
                                 step: SetGenre,
                                 inspector: <ModelViewer model="shoes"/>,
-                                skippable: false
+                                skippable: true
                             },
                             {
                                 title: 'Set Vibe',
                                 icon: '',
                                 step: SetVibe,
                                 inspector: <ModelViewer model="spices"/>,
-                                skippable: false
+                                skippable: true
                             },
                             {
                                 title: 'Add Artists',
                                 icon: '',
                                 step: AddArtists,
                                 inspector: <ModelViewer model="scissors"/>,
-                                skippable: false
+                                skippable: true
                             },
-                            {
+                            /* {
                                 title: 'Link Spotify',
                                 icon: '',
                                 step: LinkSpotify,
                                 inspector: <ModelViewer model="mirror"/>,
                                 skippable: false
-                            },
+                            }, */
                             {
                                 title: 'Create Mix',
                                 icon: '',

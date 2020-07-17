@@ -7,9 +7,7 @@ export default class PillSelect extends React.Component {
         title: this.props.title,
         options: this.props.children.options,
         multi: this.props.multi,
-        name: this.props.name,
         max: this.props.max,
-        handleChange: this.props.handleChange,
         value: this.props.formValues[this.props.name] || null
     }
 
@@ -67,9 +65,9 @@ export default class PillSelect extends React.Component {
     }
 
     bubbleChange = () => {
-        this.state.handleChange({
+        this.props.handleChange({
             target: {
-                name: this.state.name,
+                name: this.props.name,
                 value: this.state.value
             }
         })

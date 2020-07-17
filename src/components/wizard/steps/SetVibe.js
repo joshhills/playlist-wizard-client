@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import PillSelect from '../../pill-select/PillSelect'
+import vibes from '../../../config/vibes.json'
 
 export default function SetVibe(props) {
     return (
@@ -14,20 +15,7 @@ export default function SetVibe(props) {
             </p>
             <PillSelect name="vibes" multi="true" handleChange={ props.handleValueChange } formValues={ props.formValues }>
                 {{
-                    options: [
-                        {
-                            value: 0,
-                            label: 'Digital'
-                        },
-                        {
-                            value: 1,
-                            label: 'Acoustic'
-                        },
-                        {
-                            value: 2,
-                            label: 'Short'
-                        }
-                    ]
+                    options: vibes.map(v => { return { value: v.id, label: v.label } })
                 }}
             </PillSelect>
         </Fragment>

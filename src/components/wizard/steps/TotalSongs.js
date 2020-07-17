@@ -14,12 +14,12 @@ export default function TotalSongs(props) {
                 playlist
             </p>
             <input
-                name="total-songs"
+                name="limit"
                 min="5"
                 max="100"
                 type="number"
                 placeholder="31"
-                value={ props.formValues['total-songs']}
+                value={ props.formValues['limit'] || '' }
                 onChange={ props.handleValueChange } />
         </Fragment>
     )

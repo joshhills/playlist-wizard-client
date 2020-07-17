@@ -1,19 +1,34 @@
 import React, { Fragment } from 'react'
-import LinkSpotifyButton from '../../LinkSpotifyButton'
+import LoginButton from '../../spotify/LoginButton'
 
-export default function TotalSongs() {
-    return (
-        <Fragment>
-            <p>
-                <em>
-                    The wizard holds up a mirror which reflects your younger self.
-                </em>
-            </p>
-            <p>
-                Optionally link your Spotify to influence the resultant
-                playlist with your listening history
-            </p>
-            <LinkSpotifyButton />
-        </Fragment>
-    )
+import AuthTokenContext from '../../../AuthTokenContext'
+
+export default class TotalSongs extends React.Component {
+    static contextType = AuthTokenContext
+
+    render() {
+
+        return (
+            <Fragment>
+                <p>
+                    <em>
+                        The wizard holds up a mirror which reflects your younger self.
+                    </em>
+                </p>
+                <label>
+                    Use your Spotify history to influence the resultant
+                    playlist?
+                    
+                    { this.context ?
+                        <input
+                            name="useHistory"
+                            type="checkbox"
+                            checked={ this.props.formValues['useHistory'] || false }
+                            onChange={ this.props.handleValueChange } /> 
+                        : <LoginButton /> }
+                    
+                </label>
+            </Fragment>
+        )
+    }
 }

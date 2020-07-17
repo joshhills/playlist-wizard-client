@@ -1,0 +1,122 @@
+[
+    {
+        "id": 0,
+        "label": "Digital",
+        "mapsTo": {
+            "id": "example",
+            "value": 100
+        }
+    },
+    {
+        "id": 1,
+        "label": "Acoustic",
+        "mapsTo": {
+            "id": "example",
+            "value": 100
+        }
+    },
+    {
+        "id": 2,
+        "label": "Move About",
+        "mapsTo": {
+            "id": "example",
+            "value": 100
+        }
+    },
+    {
+        "id": 3,
+        "label": "Chaotic",
+        "mapsTo": {
+            "id": "example",
+            "value": 100
+        }
+    },
+    {
+        "id": 4,
+        "label": "Chill",
+        "mapsTo": {
+            "id": "example",
+            "value": 100
+        }
+    },
+    {
+        "id": 5,
+        "label": "Wordsy",
+        "mapsTo": {
+            "id": "example",
+            "value": 100
+        }
+    },
+    {
+        "id": 6,
+        "label": "Instrumental",
+        "mapsTo": {
+            "id": "example",
+            "value": 100
+        }
+    },
+    {
+        "id": 7,
+        "label": "Quiet",
+        "mapsTo": {
+            "id": "example",
+            "value": 100
+        }
+    },
+    {
+        "id": 8,
+        "label": "Loud",
+        "mapsTo": {
+            "id": "example",
+            "value": 100
+        }
+    },
+    {
+        "id": 9,
+        "label": "Sad",
+        "mapsTo": {
+            "id": "example",
+            "value": 100
+        }
+    },
+    {
+        "id": 10,
+        "label": "Happy",
+        "mapsTo": {
+            "id": "example",
+            "value": 100
+        }
+    },
+    {
+        "id": 11,
+        "label": "Obscure",
+        "mapsTo": {
+            "id": "example",
+            "value": 100
+        }
+    },
+    {
+        "id": 12,
+        "label": "Sing Along",
+        "mapsTo": {
+            "id": "example",
+            "value": 100
+        }
+    },
+    {
+        "id": 13,
+        "label": "Slow",
+        "mapsTo": {
+            "id": "example",
+            "value": 100
+        }
+    },
+    {
+        "id": 14,
+        "label": "Fast",
+        "mapsTo": {
+            "id": "example",
+            "value": 100
+        }
+    }
+]
